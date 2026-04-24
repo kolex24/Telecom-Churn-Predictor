@@ -115,7 +115,8 @@ source .venv/bin/activate        # Linux/Mac
 
 ## Post / Predict
 **new_customer:**
----json
+---
+json
 {
     'tenure':          2,
     'MonthlyCharges':  19.0,
@@ -138,6 +139,7 @@ source .venv/bin/activate        # Linux/Mac
     'StreamingMovies': 'No'
 
 }
+
 ```
 
 
