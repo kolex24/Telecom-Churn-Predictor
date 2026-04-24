@@ -6,6 +6,7 @@ End-to-end machine learning project to predict customer churn 30 days in advance
 - [Results](#results)
 - [Project Structuire](#project-structure)
 - [Pipeline Architecture](#pipeline-architecture)
+- [Installation](#installation)
 - [Feature Engineering](#feature-engineering)
 - [Model Evaluation](#model-evaluation)
 - [Monitoring](#monitoring)
@@ -59,4 +60,39 @@ churn-predictor/
 ├── requirements.txt
 ├── Makefile
 └── README.md
+```
+
+## Pipeline Architecture
+
+```
+X_train (raw)
+      │
+      ▼
+┌─────────────────────┐
+│  ChurnFeatureEngineer│  →  adds charge_per_tenure, services_count,
+│  (custom transformer)│      charge_vs_cohort, is_new_customer, high_value_new
+└─────────────────────┘
+      │
+      ▼
+┌─────────────────────┐
+│   ColumnTransformer  │  →  StandardScaler (numeric)
+│   (preprocessor)    │      OneHotEncoder
+│                     │      
+│                     │     
+└─────────────────────┘
+      │
+      ▼
+┌─────────────────────┐
+│  Full Pipleine      │  
+│                     │      
+└─────────────────────┘
+      │
+      ▼
+┌─────────────────────┐
+│   XGBoost & GB      │  →  scale_pos_weight=2.77 (handles imbalance)
+│   (tuned)           │      early_stopping_rounds=50
+└─────────────────────┘
+      │
+      ▼
+  churn_probability + risk_tier
 ```
