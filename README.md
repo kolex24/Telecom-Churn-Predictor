@@ -41,7 +41,10 @@ A telecom company loses ~27% of its customers annually. This project builds a **
 ## Project Structure
 ```bash
 project-name/
-Telecom-Churn-Predictor
+Telecom-Churn-Predictor\
+
+
+
 |
 ——data/
 ——raw/
