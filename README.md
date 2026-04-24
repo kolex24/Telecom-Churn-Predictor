@@ -119,25 +119,25 @@ Predict churn probability for a single customer.
 **new_customer:**
 ```json
 {
-   'tenure': 2,
-   'MonthlyCharges': 19.0,
-   'TotalCharges': 178.0,
-   'SeniorCitizen': 0,
-   'Contract': 'Month-to-month',
-   'InternetService': 'Fiber optic',
-   'PaymentMethod': 'Electronic check',
-   'OnlineSecurity': 'No',
-   'TechSupport':     'No',
-   'PaperlessBilling':'Yes',
-   'gender': 'Male',
-   'Partner': 'No',
-   'Dependents':'Yes',
-   'PhoneService': 'No',
-   'MultipleLines': 'Yes',
-   'OnlineBackup': 'No',
-   'DeviceProtection' : 'Yes',
-   'StreamingTV': 'Yes',
-   'StreamingMovies': 'No'
+   "tenure": 2,
+   "MonthlyCharges": 19.0,
+   "TotalCharges": 178.0,
+   "SeniorCitizen": 0,
+   "Contract": "Month-to-month",
+   "InternetService': 'Fiber optic',
+   "PaymentMethod": "Electronic check",
+   "OnlineSecurity": "No",
+   "TechSupport": "No",
+   "PaperlessBilling": "Yes",
+   "gender": "Male",
+   "Partner": "No",
+   "Dependents":"Yes",
+   "PhoneService": "No",
+   "MultipleLines": "Yes",
+   "OnlineBackup": "No",
+   "DeviceProtection" : "Yes",
+   "StreamingTV": "Yes",
+   "StreamingMovies": "No"
 }
 ```
 
