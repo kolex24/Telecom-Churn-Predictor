@@ -114,6 +114,34 @@ source .venv/bin/activate        # Linux/Mac
 ```
 
 ## Post / Predict
+Predict churn probability for a single customer.
+
+**Request body:**
+```json
+{
+  "tenure": 12,
+  "monthly_charges": 79.50,
+  "total_charges": 954.00,
+  "contract": "Month-to-month",
+  "internet_service": "Fiber optic",
+  "payment_method": "Electronic check",
+  "phone_service": "Yes",
+  "paperless_billing": "Yes",
+  "online_security": "No",
+  "tech_support": "No",
+  "streaming_tv": "Yes",
+  "senior_citizen": 0
+}
+```
+
+**Response:**
+```json
+{
+  "churn_probability": 0.7341,
+  "risk_tier": "HIGH",
+  "predicted_churn": true,
+  "model_version": "xgb_20240422_1430"
+}
 **new_customer:**
 ---
 json
