@@ -116,19 +116,17 @@ source .venv/bin/activate        # Linux/Mac
 ## Post / Predict
 Predict churn probability for a single customer.
 
-Predict churn probability for a single customer.
-
 **new_customer:**
 ```json
 {
    'tenure': 2,
-   'MonthlyCharges':19.0,
-   'TotalCharges':    178.0,
-   'SeniorCitizen':   0,
-   'Contract':        'Month-to-month',
+   'MonthlyCharges': 19.0,
+   'TotalCharges': 178.0,
+   'SeniorCitizen': 0,
+   'Contract': 'Month-to-month',
    'InternetService': 'Fiber optic',
-   'PaymentMethod':   'Electronic check',
-   'OnlineSecurity':  'No',
+   'PaymentMethod': 'Electronic check',
+   'OnlineSecurity': 'No',
    'TechSupport':     'No',
    'PaperlessBilling':'Yes',
    'gender': 'Male',
@@ -146,9 +144,9 @@ Predict churn probability for a single customer.
 **Response:**
 ```json
 {
-  'Churn probability': 81.0%
-  'Churn Predicted': True
-  'Risk level': 🔴 HIGH
+  "Churn probability": 81.0%
+  "Churn Predicted": True
+  "Risk level": 🔴 HIGH
 }
 ```
 
