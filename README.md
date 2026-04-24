@@ -196,7 +196,8 @@ Every prediction can be explained at the individual customer level using SHAP wa
 
 ---
 
-
+## License
+MIT © [kolex24](https://github.com/kolex24)
 
 
 
