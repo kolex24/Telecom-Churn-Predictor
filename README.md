@@ -150,17 +150,14 @@ Predict churn probability for a single customer.
 }
 ```
 
-```
 
 **Risk tiers:**
 
 | Tier | Probability | Recommended Action |
 |---|---|---|
-| `HIGH` | ≥ 0.60 | Immediate outreach + retention offer |
-| `MEDIUM` | 0.35 – 0.59 | Schedule follow-up call |
-| `LOW` | < 0.35 | Monitor only |
-
----
+| HIGH | ≥ 0.60 | Immediate outreach + retention offer |
+| MEDIUM | 0.35 – 0.59 | Schedule follow-up call |
+| LOW | < 0.35 | Monitor only |
 
 ## Feature Engineering
 
