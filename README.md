@@ -119,18 +119,25 @@ Predict churn probability for a single customer.
 **Request body:**
 ```json
 {
-  "tenure": 12,
-  "monthly_charges": 79.50,
-  "total_charges": 954.00,
-  "contract": "Month-to-month",
-  "internet_service": "Fiber optic",
-  "payment_method": "Electronic check",
-  "phone_service": "Yes",
-  "paperless_billing": "Yes",
-  "online_security": "No",
-  "tech_support": "No",
-  "streaming_tv": "Yes",
-  "senior_citizen": 0
+'tenure':          2,
+'MonthlyCharges':  19.0,
+'TotalCharges':    178.0,
+'SeniorCitizen':   0,
+'Contract':        'Month-to-month',
+'InternetService': 'Fiber optic',
+'PaymentMethod':   'Electronic check',
+'OnlineSecurity':  'No',
+'TechSupport':     'No',
+'PaperlessBilling':'Yes',
+'gender': 'Male',
+'Partner': 'No',
+'Dependents':'Yes',
+'PhoneService': 'No',
+'MultipleLines': 'Yes',
+'OnlineBackup': 'No',
+'DeviceProtection' : 'Yes',
+'StreamingTV': 'Yes',
+'StreamingMovies': 'No'
 }
 ```
 
