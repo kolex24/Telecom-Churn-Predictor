@@ -27,5 +27,5 @@ A telecom company loses ~27% of its customers annually. This project builds a **
 | Logistic Regression (baseline) | 0.849 | ± 0.013 |
 | Random Forest | 0.847 | ± 0.014 |
 | Gradient Boosting | 0.844 | ± 0.012 |
-| XGBoost | 0.833 | ± 0.014 |
+| **XGBoost (selected)** | **0.8503** | **± 0.007** |
 | LightGBM | 0.831 | ± 0.015 |
