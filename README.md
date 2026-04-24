@@ -96,3 +96,28 @@ X_train (raw)
       ▼
   churn_probability + risk_tier
 ```
+
+## Installation
+
+```bash
+git clone https://github.com/kolex24/Telecom-Churn-Predictor.git
+cd Telecom-Churn-Predictor
+pip install -r requirements.txt
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
