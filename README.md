@@ -20,3 +20,12 @@ A telecom company loses ~27% of its customers annually. This project builds a **
 | **Primary metric** | AUC-ROC |
 | **Dataset** | 7,043 customers × 21 features |
 | **Class balance** | 73.5% no churn / 26.5% churn |
+
+## Results
+| Model | CV AUC-ROC | Std |
+| --- | --- |
+| Logistic Regression (baseline) | 0.849 | ± 0.013 |
+| Random Forest | 0.847 | ± 0.014 |
+| Gradient Boosting | 0.844 | ± 0.012 |
+| XGBoost | 0.833 | ± 0.014 |
+| LightGBM | 0.831 | ± 0.015 |
