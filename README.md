@@ -42,11 +42,9 @@ A telecom company loses ~27% of its customers annually. This project builds a **
 ```bash
 project-name/
 Telecom-Churn-Predictor\
-
-
-
-|
-——data/
-——raw/
-
+|——data/
+|  |—raw/
+|  |—preprocessed/
+|——notebooks/
+|  |—telcom_churn.ipynb
 ```
