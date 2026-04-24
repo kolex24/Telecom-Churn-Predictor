@@ -33,4 +33,7 @@ A telecom company loses ~27% of its customers annually. This project builds a **
 **Holdout test set (XGBoost, threshold=0.4):**
 | Metric | Score | Target |
 | --- | ---| --- |
-| AUC-ROC | 0.854 | >= 0.85 ✅ |
+| AUC-ROC | 0.854 | ≥ 0.85 ✅ |
+| Recall | 0.811 | ≥ 0.80  ✅ |
+| Precision | 0.52 | — |
+| F1-Score | 0.63 | — |
