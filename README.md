@@ -37,3 +37,9 @@ A telecom company loses ~27% of its customers annually. This project builds a **
 | Recall | 0.811 | ≥ 0.80  ✅ |
 | Precision | 0.52 | — |
 | F1-Score | 0.63 | — |
+
+## Project Structure
+```bash
+project-name/
+Telecom-Churn-Predictor
+```
