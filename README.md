@@ -10,7 +10,6 @@ End-to-end machine learning project to predict customer churn 30 days in advance
 - [Post / Predict](#post/predict)
 - [Feature Engineering](#feature-engineering)
 - [Model Evaluation](#model-evaluation)
-- [Monitoring](#monitoring)
 
 ## Overview
 A telecom company loses ~27% of its customers annually. This project builds a **binary classification model** that identifies at-risk customers before they churn, enabling retention teams to intervene proactively.
@@ -174,7 +173,27 @@ Five domain-driven features are created inside `ChurnFeatureEngineer`, a custom 
 > **Note:** Cohort means are computed only on training data inside `.fit()` to prevent data leakage.
 
 
+---
 
+## Model Evaluation
+
+### Threshold selection
+
+Rather than defaulting to 0.50, the decision threshold is optimized for expected business value:
+EV = TP × $180 + FP × (−$15) + FN × (−$200)
+
+threshold: 0.40 — maximizes revenue saved vs retention cost.
+
+### Confusion matrix (test set, threshold = 0.40)
+                 Predicted No    Predicted Yes
+Actual No              511             266
+Actual Yes              35             245
+
+### SHAP explainability
+
+Every prediction can be explained at the individual customer level using SHAP waterfall plots, enabling agents to understand *why* a customer is flagged as high-risk.
+
+---
 
 
 
