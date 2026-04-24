@@ -39,12 +39,24 @@ A telecom company loses ~27% of its customers annually. This project builds a **
 | F1-Score | 0.63 | — |
 
 ## Project Structure
-```bash
-project-name/
-Telecom-Churn-Predictor\
-|——data/
-|  |—raw/
-|  |—preprocessed/
-|——notebooks/
-|  |—telcom_churn.ipynb
+```
+churn-predictor/
+│
+├── data/
+│   ├── raw/                    # Raw CSV / DB snapshots
+│   └── processed/              # Feature-engineered outputs
+│
+├── notebooks/
+│   ├── telcom_churn.ipynb            # Exploratory data analysis
+|
+├── src/
+│   ├── features.py             # ChurnFeatureEngineer transformer
+│   ├── pipeline.py             # Full sklearn pipeline definition
+│   ├── train.py                # Training + hyperparameter search
+│   ├── evaluate.py             # Metrics, SHAP, threshold tuning
+│   └── predict.py              # Inference utilities
+│
+├── requirements.txt
+├── Makefile
+└── README.md
 ```
