@@ -7,6 +7,7 @@ End-to-end machine learning project to predict customer churn 30 days in advance
 - [Project Structuire](#project-structure)
 - [Pipeline Architecture](#pipeline-architecture)
 - [Installation](#installation)
+- [Post / Predict](#post/predict)
 - [Feature Engineering](#feature-engineering)
 - [Model Evaluation](#model-evaluation)
 - [Monitoring](#monitoring)
@@ -105,15 +106,39 @@ cd Telecom-Churn-Predictor
 pip install -r requirements.txt
 ```
 
-## Environment Variables
 **Create a virtual environment**
 ```bash
 python -m venv .venv
 source .venv/bin/activate        # Linux/Mac
 .venv\Scripts\activate           # Windows
+```
 
+## Post / Predict
+**new_customer:**
+---json
+{
+    'tenure':          2,
+    'MonthlyCharges':  19.0,
+    'TotalCharges':    178.0,
+    'SeniorCitizen':   0,
+    'Contract':        'Month-to-month',
+    'InternetService': 'Fiber optic',
+    'PaymentMethod':   'Electronic check',
+    'OnlineSecurity':  'No',
+    'TechSupport':     'No',
+    'PaperlessBilling':'Yes',
+    'gender': 'Male',
+    'Partner': 'No',
+    'Dependents':'Yes',
+    'PhoneService': 'No',
+    'MultipleLines': 'Yes',
+    'OnlineBackup': 'No',
+    'DeviceProtection' : 'Yes',
+    'StreamingTV': 'Yes',
+    'StreamingMovies': 'No'
 
-
+}
+```
 
 
 
