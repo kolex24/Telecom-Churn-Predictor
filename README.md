@@ -185,8 +185,8 @@ EV = TP × $180 + FP × (−$15) + FN × (−$200)
 threshold: 0.40 — maximizes revenue saved vs retention cost.
 
 ### Confusion matrix (test set, threshold = 0.40)
-|---|---|---|
 |            |    Predicted No   | Predicted Yes |
+| --- | ---| --- |
 | Actual No  |         511       |       266     |
 | Actual Yes |         35        |       245     |
 
