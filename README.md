@@ -23,7 +23,7 @@ A telecom company loses ~27% of its customers annually. This project builds a **
 
 ## Results
 | Model | CV AUC-ROC | Std |
-| --- | --- |
+| --- | --- | --- |
 | Logistic Regression (baseline) | 0.849 | ± 0.013 |
 | Random Forest | 0.847 | ± 0.014 |
 | Gradient Boosting | 0.844 | ± 0.012 |
