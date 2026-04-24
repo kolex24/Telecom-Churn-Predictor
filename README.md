@@ -124,7 +124,7 @@ Predict churn probability for a single customer.
    "TotalCharges": 178.0,
    "SeniorCitizen": 0,
    "Contract": "Month-to-month",
-   "InternetService': 'Fiber optic',
+   "InternetService': "Fiber optic",
    "PaymentMethod": "Electronic check",
    "OnlineSecurity": "No",
    "TechSupport": "No",
@@ -150,6 +150,31 @@ Predict churn probability for a single customer.
 }
 ```
 
+```
+
+**Risk tiers:**
+
+| Tier | Probability | Recommended Action |
+|---|---|---|
+| `HIGH` | ≥ 0.60 | Immediate outreach + retention offer |
+| `MEDIUM` | 0.35 – 0.59 | Schedule follow-up call |
+| `LOW` | < 0.35 | Monitor only |
+
+---
+
+## Feature Engineering
+
+Five domain-driven features are created inside `ChurnFeatureEngineer`, a custom `sklearn` transformer that sits at the start of the pipeline:
+
+| Feature | Formula | Rationale |
+|---|---|---|
+| `charge_per_tenure` | `total_charges / (tenure + 1)` | Measures cost efficiency over time |
+| `services_count` | Count of active services ≠ "No" | Engagement proxy — more services = less likely to churn |
+| `charge_vs_cohort` | `monthly_charges − cohort_mean` | Detects customers overpaying vs peers |
+| `is_new_customer` | `tenure ≤ 6` | First 6 months are highest-risk window |
+| `high_value_new` | `is_new_customer AND monthly_charges > 70` | High-spend new customers need priority attention |
+
+> **Note:** Cohort means are computed only on training data inside `.fit()` to prevent data leakage.
 
 
 
